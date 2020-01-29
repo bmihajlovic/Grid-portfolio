@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam:400,700|Open+Sans:300,400,600');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+}
+
+/* navbar */
+
+.navbar-brand {
+    color: white !important; 
+/*important se stavi ako se boja ne promeni*/
+    font-size: 1.6em;
+}
+.nav-link {
+    color: orangered !important;
+    font-size: 1.3em;
+    transition-duration: 0.4s;
+}
+.nav-link:hover {
+    color: white !important;
+}
+
+/* header */
+header {
+    background-image: url(img/header.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.box {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+header .card {
+    border-radius: 0;
+    border: 3px solid #333;
+    background-color: aliceblue;
+    opacity: .7;
+}
+header .card-title {
+    color: orangered;
+}
+header .card a {
+    font-size: 1.3em;
+    background: orangered;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 0;
+}
+header .card a:hover {
+    background: black;
+    color: white;
+}
+
+/* interests */
+.title-underline {
+    width: 10em;
+    border: 5px solid orangered;
+    margin: 0 auto 3em auto;
+}
+.small-text-underline {
+    width: 4em;
+    border: 5px solid orangered;
+    margin: 0 auto 3em auto;
+}
+#interests {
+    padding: 3em;
+}
+#interests .card {
+    position: relative;
+    margin-bottom: 2em;
+}
+#interests .card-text {
+    padding: 30px;
+}
+#interests .corner-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255, 69, 0, 0.8);
+}
+#interests .corner-text p {
+    font-weight: 600;
+    padding: 10px;
+    margin-bottom: 0;
+}
+#interests img {
+    transition: transform 3s ease-in-out; /*funkcija kojom brzinom da ide*/
+}
+#interests img:hover {
+    transform: scale(1.3);
+}
+.holder {
+    overflow: hidden; /* overflow, da slika ne izadje iz opsega, van bordera*/
+}
+
+/* skills */
+#skills {
+    padding: 3em;
+    background: black;
+    color: white;
+    text-align: center;
+}
+#skills .fab {
+    padding-bottom: 30px;
+    font-size: 4em;
+    color: orangered;   
+}
+
+/* portfolio */
+#portfolio {
+    background: #ddd;
+    padding: 3em;
+}
+#portfolio .col-sm-6 {
+    padding-left: 0 !important;
+}
+#portfolio .col-sm-6:hover {
+    opacity: 0.7;
+}
+#portfolio img {
+    transition: transform 3s ease-in-out;
+}
+#portfolio img:hover {
+    transform: scale(1.2);
+}
+
+/* footer */
+footer {
+    background: orangered;
+    padding: 3em;
+    color: black;
+}
+footer .title-underline {
+    width: 10em;
+    border: 5px solid black;
+    margin: 0 auto 3em auto;
+}
+footer a {
+    color: black;
+    font-size: 2em;
+    margin: 10px;
+}
+footer a:hover {
+    color: white;
+    transition-duration: 0.7s;
+}
+footer i:hover {
+    animation: footer 0.7s ease;
+}
+@keyframes footer {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+footer h3 {
+    margin-top: 30px;
+}
